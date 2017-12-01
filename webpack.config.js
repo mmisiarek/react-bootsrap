@@ -40,6 +40,28 @@ module.exports = {
           ],
         }),
       },
+      {
+        test: /\.(png|jpg|gif)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: 'public/images/[hash].[ext]',
+            },
+          },
+        ],
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf|svg)(\?#iefix)?$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: 'public/fonts/[hash].[ext]',
+            },
+          },
+        ],
+      },
     ],
   },
   resolve: {

@@ -1,6 +1,7 @@
 import React from 'react';
-
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
+import './style.scss';
 
 import Welcome from './screens/welcome';
 import About from './screens/about';

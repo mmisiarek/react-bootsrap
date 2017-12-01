@@ -1,0 +1,41 @@
+// http path
+$fontPath: "../assets/fonts/";
+
+@font-face {
+  font-family: "publicoHeadlineWeb";
+  src: url($fontPath + "PublicoHeadWeb-Extrabold.eot");
+  src: url($fontPath + "PublicoHeadWeb-Extrabold.eot?#iefix")
+      format("embedded-opentype"),
+    url($fontPath + "PublicoHeadWeb-Extrabold.woff2") format("woff2"),
+    url($fontPath + "PublicoHeadWeb-Extrabold.woff") format("woff"),
+    url($fontPath + "PublicoHeadWeb-Extrabold.ttf") format("truetype"),
+    url($fontPath + "/PublicoHeadWeb-Extrabold.svg#publicoHeadlineWeb")
+      format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ClanWeb";
+  src: url($fontPath + "ClanWeb-Book.eot");
+  src: url($fontPath + "ClanWeb-Book.eot?#iefix") format("embedded-opentype"),
+    url($fontPath + "ClanWeb-Book.woff2") format("woff2"),
+    url($fontPath + "ClanWeb-Book.woff") format("woff"),
+    url($fontPath + "ClanWeb-Book.ttf") format("truetype"),
+    url($fontPath + "ClanWeb-Book.svg#ClanWeb") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "clanotmedium";
+  src: url($fontPath + "clanot-medium-webfont.eot");
+  src: url($fontPath + "clanot-medium-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url($fontPath + "clanot-medium-webfont.woff2") format("woff2"),
+    url($fontPath + "clanot-medium-webfont.woff") format("woff"),
+    url($fontPath + "clanot-medium-webfont.ttf") format("truetype"),
+    url($fontPath + "clanot-medium-webfont.svg#clanotmedium") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
