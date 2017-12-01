@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Title component should render name when provided 1`] = `
+<div>
+  Hello 
+  John
+</div>
+`;
+
+exports[`Title component should render without throwing an error 1`] = `
+<div>
+  Hello 
+  stranger
+</div>
+`;

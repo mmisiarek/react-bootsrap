@@ -7,7 +7,8 @@
     "lint": "eslint src/js",
     "build": "rimraf dist && webpack -p",
     "dev": "webpack-dev-server",
-    "start": "npm run build && node server/index.js"
+    "start": "npm run build && node server/index.js",
+    "test": "jest"
   },
   "author": "",
   "license": "ISC",
@@ -27,6 +28,7 @@
     "html-webpack-plugin": "^2.30.1",
     "node-sass": "^4.7.2",
     "pre-commit": "^1.2.2",
+    "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-router-dom": "^4.2.2",
@@ -35,12 +37,28 @@
     "webpack": "^3.8.1"
   },
   "devDependencies": {
+    "babel-core": "^7.0.0-0",
+    "babel-jest": "^21.2.0",
+    "enzyme": "^3.2.0",
+    "enzyme-adapter-react-16": "^1.1.0",
+    "enzyme-to-json": "^3.2.2",
     "eslint": "^4.12.0",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jest": "^21.3.2",
     "eslint-plugin-jsx-a11y": "^6.0.2",
     "eslint-plugin-react": "^7.5.1",
+    "jest": "^21.2.1",
+    "regenerator-runtime": "^0.11.0",
     "webpack-dev-server": "^2.9.5"
   },
-  "pre-commit": ["lint"]
+  "pre-commit": ["lint", "test"],
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$":
+        "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css|scss)$": "<rootDir>/__mocks__/styleMock.js"
+    },
+    "setupTestFrameworkScriptFile": "<rootDir>/setupTests.js"
+  }
 }

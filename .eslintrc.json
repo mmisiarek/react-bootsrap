@@ -1,11 +1,12 @@
 {
   "parser": "babel-eslint",
-  "plugins": [ "react" ],
+  "plugins": ["react", "jest"],
   "extends": "airbnb",
   "rules": {
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
   },
   "env": {
-    "browser": true
+    "browser": true,
+    "jest/globals": true
   }
 }
